@@ -1,0 +1,36 @@
+{
+  "name": "genpark-split-inbox-triage-priority-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-channel inbox message priority classifier computing urgency tiers, VIP sender affinities, and automated triage SLAs.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "superhuman",
+    "split-inbox",
+    "email-triage",
+    "priority-scoring",
+    "communication-ai"
+  ],
+  "inputs": {
+    "sender_email": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "triage_id": {
+      "type": "string"
+    },
+    "target_split_inbox": {
+      "type": "string"
+    },
+    "urgency_tier": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
